@@ -1,46 +1,104 @@
-# Getting Started with Create React App
+# Kanban Board Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, accessible, and fully-featured Kanban board component built with React, TypeScript, and Tailwind CSS. Features drag-and-drop functionality, task management, and a responsive design.
 
-## Available Scripts
+##  Live Storybook
+👉 [View Live Storybook](https://kanban-component.vercel.app/?path=/story/components-kanbanboard--default)
 
-In the project directory, you can run:
+##  Installation
 
-### `npm start`
+```bash
+# Install dependencies
+npm install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Start Storybook for development
+npm run storybook
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Build for production
+npm run build
 
-### `npm test`
+# Preview production build
+npm run preview
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##  Architecture
 
-### `npm run build`
+This Kanban board follows a modular, component-based architecture with custom hooks for state management and drag-and-drop functionality. The component is built with accessibility in mind and supports keyboard navigation.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Key Architectural Decisions:
+- **Separation of Concerns**: UI components, business logic, and state management are separated
+- **Custom Hooks**: `useKanbanBoard` for state management and `useDragAndDrop` for drag functionality
+- **Type Safety**: Full TypeScript support with comprehensive type definitions
+- **Accessibility**: ARIA labels, keyboard navigation, and focus management
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##  Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [x] **Drag-and-drop tasks** between columns with visual feedback
+- [x] **Task creation/editing** through a modal form
+- [x] **Responsive design** that works on desktop and mobile
+- [x] **Keyboard accessibility** with full navigation support
+- [x] **Task prioritization** with color-coded visual indicators
+- [x] **Due date tracking** with overdue highlighting
+- [x] **Tag management** for task categorization
+- [x] **Assignee avatars** with automatic initials
+- [x] **Column limits** with visual warnings
+- [x] **Real-time updates** with callback support
 
-### `npm run eject`
+## 📚 Storybook Stories
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The component includes comprehensive Storybook stories for testing and demonstration:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Default Board**: Pre-populated with sample tasks and columns
+- **Empty State**: Shows the board with no tasks
+- **Interactive Demo**: Fully functional board with state management
+- **Mobile View**: Responsive testing across different screen sizes
+- **Accessibility Tests**: Keyboard navigation and screen reader compatibility
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🛠️ Technologies
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **React 18** - UI framework with modern hooks
+- **TypeScript** - Type safety and developer experience
+- **Tailwind CSS** - Utility-first styling
+- **Storybook** - Component development and documentation
+- **date-fns** - Date formatting and manipulation
+- **clsx** - Conditional className utility
+- **Vite** - Fast build tool and dev server
 
-## Learn More
+## 🎯 Component Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+src/
+├── components/
+│   ├── KanbanBoard/          # Main board component
+│   ├── KanbanColumn/         # Individual column component
+│   ├── KanbanCard/           # Task card component
+│   ├── TaskModal/            # Create/edit task modal
+│   └── primitives/           # Base UI components
+├── hooks/
+│   ├── useKanbanBoard/       # Board state management
+│   └── useDragAndDrop/       # Drag-and-drop logic
+├── utils/
+│   └── task.utils.ts         # Utility functions
+└── stories/
+    └── KanbanBoard.stories.tsx # Storybook stories
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+##  Accessibility
+
+- **Keyboard Navigation**: Use Tab to navigate between tasks, Enter/Space to edit
+- **Screen Reader Support**: ARIA labels and roles throughout
+- **Focus Management**: Proper focus trapping in modals
+- **Color Contrast**: WCAG compliant color combinations
+- **Drag & Drop**: Keyboard alternatives for all interactions
+
+##  License
+
+MIT License - see LICENSE file for details
+
+## 📧 Contact
+
+**[vm0222912@gmail.com]**
+
+---
+
+Built with ❤️ using React, TypeScript, and Storybook
