@@ -44,7 +44,7 @@ This Kanban board follows a modular, component-based architecture with custom ho
 - [x] **Column limits** with visual warnings
 - [x] **Real-time updates** with callback support
 
-## 📚 Storybook Stories
+##  Storybook Stories
 
 The component includes comprehensive Storybook stories for testing and demonstration:
 
@@ -54,7 +54,7 @@ The component includes comprehensive Storybook stories for testing and demonstra
 - **Mobile View**: Responsive testing across different screen sizes
 - **Accessibility Tests**: Keyboard navigation and screen reader compatibility
 
-## 🛠️ Technologies
+##  Technologies
 
 - **React 18** - UI framework with modern hooks
 - **TypeScript** - Type safety and developer experience
@@ -64,7 +64,7 @@ The component includes comprehensive Storybook stories for testing and demonstra
 - **clsx** - Conditional className utility
 - **Vite** - Fast build tool and dev server
 
-## 🎯 Component Structure
+##  Component Structure
 
 ```
 src/
@@ -95,7 +95,7 @@ src/
 
 MIT License - see LICENSE file for details
 
-## 📧 Contact
+##  Contact
 
 **[vm0222912@gmail.com]**
 
